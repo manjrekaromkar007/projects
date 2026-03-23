@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Blossom - Flower Shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 0;
+            background-color: #ffe4e1;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ff6f61;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #d94c43;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .hero h2 {
+            font-size: 3em;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 30px;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-card h3 {
+            margin: 15px 0 10px 0;
+        }
+        .product-card p {
+            color: #777;
+        }
+        .contact {
+            background-color: #ffe4e1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        .contact button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .contact button:hover {
+            background-color: #d94c43;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6f61;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bloom & Blossom</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Fresh Flowers for Every Occasion</h2>
+</section>
+
+<section class="products" id="products">
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1526401485004-9a6b0c0e0e82?auto=format&fit=crop&w=500&q=80" alt="Roses Bouquet">
+        <h3>Roses Bouquet</h3>
+        <p>Elegant bouquet of red roses, perfect for anniversaries.</p>
+    </div>
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=500&q=80" alt="Sunflowers">
+        <h3>Sunflowers</h3>
+        <p>Bright sunflowers to bring sunshine into any room.</p>
+    </div>
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1550686041-1f8c1625f7c1?auto=format&fit=crop&w=500&q=80" alt="Mixed Flowers">
+        <h3>Mixed Bouquet</h3>
+        <p>A colorful mix of seasonal flowers for any celebration.</p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2026 Bloom & Blossom. All rights reserved.
+</footer>
+
+</body>
+</html>
